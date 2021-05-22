@@ -11935,6 +11935,7 @@ fsevents@^1.2.7:
     react-helmet: ^6.1.0
     react-paypal-button-v2: ^2.6.3
     react-redux: ^7.2.4
+    react-router-bootstrap: ^0.25.0
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
     redux: ^4.1.0
@@ -11999,7 +12000,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:^15.5.10, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -12407,6 +12408,18 @@ fsevents@^1.2.7:
   version: 0.8.3
   resolution: "react-refresh@npm:0.8.3"
   checksum: 38f06df8e0a20701b96e5d680838a3528d66cfb53db79843d30cb9517df3262ec596607147439975267bf0634bee77101db37298ea79b5742cc28664632f3c76
+  languageName: node
+  linkType: hard
+
+"react-router-bootstrap@npm:^0.25.0":
+  version: 0.25.0
+  resolution: "react-router-bootstrap@npm:0.25.0"
+  dependencies:
+    prop-types: ^15.5.10
+  peerDependencies:
+    react: ">=0.14.0"
+    react-router-dom: ">=4.0.0"
+  checksum: c9a66a8cc92ff2eaffe76e95577c8db5dda68e8a6c7386832e8c8e34da4e3956ea928960391ef3dd9e99f537f1faa08b6689a43dee03bd331eeb8731180803f6
   languageName: node
   linkType: hard
 
