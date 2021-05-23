@@ -1,24 +1,16 @@
 const express = require('express')
 const dotenv = require("dotenv")
-const products = require('./data/products')
 const connectDB = require('./config/db')
+const productRoutes = require("./routes/productRouter")
 
 connectDB()
 dotenv.config()
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('API is running...')
+  res.send('API is running....')
 })
-
-app.get('/products', (req, res) => {
-  res.json(products)
-})
-
-app.get('/products/:id', (req, res) => {
-  const product = products.find((p) => p._id === req.params.id)
-  res.json(product)
-})
+app.use('/products', productRoutes )
 
 const PORT = process.env.PORT || 5000
 
