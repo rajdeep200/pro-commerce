@@ -3,9 +3,9 @@ export const userLoginReducer = (state={}, {type,payload}) => {
         case "USER_LOGIN_REQUEST":
             return {loading: true}
         case "USER_LOGIN_SUCCESS":
-            return {loading: false, users: payload}
+            return {loading: false, userInfo: payload}
         case "USER_LOGIN_FAIL":
-            return {loading: true, error: payload}
+            return {loading: false, error: payload}
         case "LOGOUT":
             return {}
         default:
