@@ -3,6 +3,7 @@ const dotenv = require("dotenv")
 const connectDB = require('./config/db')
 const productRoutes = require("./routes/productRouter")
 const userRoutes = require("./routes/userRouter")
+const orderRoutes = require("./routes/orderRouter")
 
 connectDB()
 dotenv.config()
@@ -14,6 +15,7 @@ app.get('/', (req, res) => {
 })
 app.use('/products', productRoutes )
 app.use("/users", userRoutes )
+app.use("/orders", orderRoutes)
 
 const PORT = process.env.PORT || 5000
 
