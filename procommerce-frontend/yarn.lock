@@ -11958,6 +11958,7 @@ fsevents@^1.2.7:
     react-router-bootstrap: ^0.25.0
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
+    react-stripe-checkout: ^2.6.3
     redux: ^4.1.0
     redux-devtools-extension: ^2.13.9
     redux-thunk: ^2.3.0
@@ -12564,6 +12565,13 @@ fsevents@^1.2.7:
   peerDependencies:
     react: ^16.3.0 || ^17.0.0
   checksum: 5896f7c126b9e7147e3ea6cc967dab8e3a2f6c395bd5327d16483adb91177866eec47770500a92fece866ea551f395484f6e6e078796002293bc1b53b7e65b26
+  languageName: node
+  linkType: hard
+
+"react-stripe-checkout@npm:^2.6.3":
+  version: 2.6.3
+  resolution: "react-stripe-checkout@npm:2.6.3"
+  checksum: 4131fb1106de3f619a204263369e8bdf176c9f3c33a7bf284c3b43adb21cd29263ea0b16842e4a3903ad6583990d2e2e0a6fdf275fb3bb0a717619e6f68fe1b3
   languageName: node
   linkType: hard
 

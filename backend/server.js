@@ -1,5 +1,6 @@
 const express = require('express')
 const dotenv = require("dotenv")
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY)
 const connectDB = require('./config/db')
 const productRoutes = require("./routes/productRouter")
 const userRoutes = require("./routes/userRouter")
@@ -16,6 +17,8 @@ app.get('/', (req, res) => {
 app.use('/products', productRoutes )
 app.use("/users", userRoutes )
 app.use("/orders", orderRoutes)
+
+app.use("/config/paypal", (req,res) => res.send(process.env.PAYPAL_CLIENT_ID))
 
 const PORT = process.env.PORT || 5000
 
